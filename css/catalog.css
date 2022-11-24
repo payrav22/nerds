@@ -1,0 +1,120 @@
+.main-title {
+  font-family: Roboto-500;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  text-align: center;
+  background-color: #EEEEEE;
+}
+.section-title {
+  font-family: Roboto-700;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.grid-item {
+  font-family: Roboto-400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+}
+.peculiarities-item {
+  font-family: Roboto-400;
+  font-size: 16px;
+  font-weight: 400;
+  color: #283136;
+  line-height: 20px;
+}
+.radio {
+  color: #283136;
+  opacity: 0.4;
+}
+.radio:hover {
+  opacity: 100%;
+}
+.chekbox {
+  color: #283136;
+  opacity: 0.4;
+}
+.chekbox:hover {
+  opacity: 100%;
+}
+.sorting-text {
+  font-family: Roboto-400;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.peculiarities-button {
+  font-family: Roboto-500;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #EEEEEE;
+  border-radius: 3px;
+  padding: 16px 45px;
+  width: 260px;
+  height: 50px;
+}
+.project-title {
+  font-family: Roboto-700;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.project-text {
+  font-family: Roboto-400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+.project-button {
+  font-family: Roboto-500;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #FB565A;
+  border-radius: 3px;
+  padding: 16px 45px;
+  width: 200px;
+  height: 50px;
+}
+.project-list-item {
+  background-color: #EEEEEE;
+}
+.project-img {
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+}
+.project-number-button {
+  font-family: Roboto-500;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #EEEEEE;
+  border-radius: 3px;
+  padding: 16px 45px;
+  width: 50px;
+  height: 50px;
+}
+.project-next-button {
+  font-family: Roboto-500;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+   background-color: #EEEEEE;
+  border-radius: 3px;
+  padding: 16px 45px;
+  width: 260px;
+  height: 50px;
+}

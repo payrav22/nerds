@@ -4,139 +4,254 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/normalize.css">
   <title>Нёрдс</title>
 </head>
 <body>
-  <header>
-<nav>
-  <a><img src="./img/nerds-logo.png" alt="Логотип Нёрдс"></a>
-<ul>
-  <li><a href="blank.html">Студия</a></li>
-  <li><a href="blank.html">Клиенты</a></li>
-  <li><a href="catalog.html">Магазин</a></li>
-  <li><a href="blank.html">Контакты</a></li>
-  </ul>  
-<a href="blank.html">Вход</a> 
-</nav>
-<section>
-  <h1>Долго, дорого, скрупулезно.</h1>
-  <p>Математический выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-  <a href="blank.html">Узнать больше</a>
-</section>
-<section>
-  <img src="./img/nerds-index-slide1 1.png">
-  <img src="./img/nerds-index-slide1 1.png">
-  <img src="./img/nerds-index-slide1 1.png">
-</section>
-</header>
-<main>
-  <section>
-    <ul>
-      <li>
-        <a href="#"><img src="./img/illustration-1 1.png"></a>
-        <h3>Веб-сайты</h3>
-        <p>Мир никогда не будет прежним<br> после того как увидит ваш сайт!</p>
-        <a href="blank.html">Заказать</a>
-      </li>
-      <li>
-        <a href="#"><img src="./img/illustration-2 1.png"></a>
-        <h3>Приложения</h3>
-       <p>Покорите топ-10 приложений<br> в AppStore и Google Play</p>
-        <a href="blank.html">Заказать</a>
-      </li>
-      <li>
-        <a href="#"><img src="./img/illustration-3 1.png"></a>
-        <h3>Презентации</h3>
-       <p> даже не подозреваете,<br> насколько вы изумительны!</p>
-        <a href="blank.html">Заказать</a> 
-      </li>
-    </ul>
-  </section>
-<section>
-<h2>Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</h2>
-<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
-<h4>Выполняем заказы на разработку:</h4>
-<ul>
-  <li>Веб-сайтов любой сложности</li>
-  <li>Мобильных приложений для iOS и Android</li>
-  <li>Слайдшоу и видео для корпоративных презентаци</li>
-</ul>
-</section>
-<section>
-  <figure>
-    <a gref="#">
-      <img src="./img/nerds-illustration 1.png">
-    </a>
-  </figure>
-  <h4>с 2004 года Любим точность во всем:</h4>
-  <ul>
-    <li>
-      <h2>146<sup>%</sup></h2>
-      <p>Уровень<br> самоотдачи</p>
+  <header class="main-header">
+    <div class="visually-hidden">
+      <svg>
+        <symbol id="trush" viewBox="0 0 15 15 " fill="none">
+          <path fill="currentColor"
+            d="M4.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM12.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951V2Z" />
+        </symbol>
+        <symbol id="vk" viewBox="0 0 27 15" fill="none">
+          <path fill="currentColor"
+            d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419Z" />
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 12 22" fill="none">
+          <path fill="currentColor" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4Z" />
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 21 21" fill="none">
+          <path fill="currentColor" fill-rule="evenodd"
+            d="M3 0h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3Zm11 10.5C14 8.57 12.43 7 10.5 7S7 8.57 7 10.5 8.57 14 10.5 14s3.5-1.57 3.5-3.5ZM3 18V9h1.181c-.118.491-.18.995-.181 1.5a6.5 6.5 0 1 0 13 0 6.451 6.451 0 0 0-.181-1.5H18v9H3ZM14 7h4V3h-4v4Z"
+            clip-rule="evenodd" />
+      </symbol>
+      <symbol id="down" viewBox="0 0 11 10" fill="none">
+        <path fill="currentColor" d="M5.5 10 0 0h11" />
+      </symbol>
+      <symbol id="up" viewBox="0 0 11 10" fill="none">
+        <path fill="currentColor" d="M5.5 0 0 10h11L5.5 0Z" opacity=".2" />
+      </symbol>
+      <symbol id="close" viewBox="0 0 21 21" fill="none">
+        <path fill="currentColor" fill-opacity=".3"
+          d="m13.34 10.509 7.376-7.377c.39-.39.39-1.026 0-1.416L19.301.3a1.003 1.003 0 0 0-1.415 0l-7.377 7.378L3.132.301a1.003 1.003 0 0 0-1.416 0L.301 1.716c-.39.39-.39 1.026 0 1.416l7.377 7.377-7.377 7.377c-.39.39-.39 1.026 0 1.415l1.416 1.415c.39.39 1.026.39 1.416 0l7.377-7.377 7.377 7.377c.39.39 1.026.39 1.415 0l1.415-1.415c.39-.39.39-1.026 0-1.415l-7.378-7.377Z" />
+      </symbol>
+      </svg>
+    </div>
+    <nav class="main-navigation">
+      <ul>
+        <li>
+        <a class="main-header-logo">
+        <img src="./img/nerds-logo.png" alt="Логотип Нёрдс">
+      </a>
     </li>
-    <li>
-      <h2>100<sup>%</sup></h2>
-      <p>Соблюдение<br> сроков</p>
-    </li>
-    <li>
-      <h2>50<sup>%</sup></h2>
-      <p>Минимальная<br> предоплата</p>
-    </li>
-  </ul>
-</section>
-<section>
-  <ul>
-    <li>
-  <a href="#">
-    <img src="./img/logo_htmlacademy 1.png">
-  </a>
-</li>
-<li>
-  <a href="#">
-    <img src="./img/logo-2 1.png">
-  </a>
-</li>
-<li>
-  <a href="#">
-    <img src="./img/logo-3 1.png">
-  </a>
-</li>
-<li>
-  <a href="#">
-    <img src="./img/logo-4 1.png">
-  </a>
-</li>
-</ul>
-</section>
-</main>
-<foooter>
-  <section>
-<h3>NЁRDS DESIGN STUDIO</h3>
-    <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург<br><br> 
-      +7 800 555-86-28</p>
-      <a href#>
+      </ul>
+      <ul class="site-navigation">
+        <li class="navigation-item"><a href="#">Студия</a></li>
+        <li class="navigation-item"><a href="#">Клиенты</a></li>
+        <li class="navigation-item"><a href="catalog.html">Магазин</a></li>
+        <li class="navigation-item"><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li>
+          <svg width="15" height="15">
+            <use xlink:href="#trush"></use>
+          </svg>
+        </li>
+        <li class="navigation-item">
+          <a class="login-link" href="blank.html">Вход</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container index-main">
+    <section class="slider">
+    <section class="slider-item">
+      <p>Долго, дорого, скрупулезно.</p>
+      <p>Математический выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+      <a class="button slider-button" href="blank.html">Узнать больше</a>
+      <img src="./img/nerds-index-slide1 1.png">
+    </section>
+    <section class="slider-item">
+      <p>Любим математику как никато другой</p>
+      <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
+      <a class="button slider-button" href="blank.html">Узнать больше</a>
+      <img src="./img/nerds-index-slide2 1.png">
+    </section>
+    <section class="slider-item">
+      <p>Только ночь,<br> только хардкор</p>
+      <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+      <a class="button slider-button" href="blank.html">Узнать больше</a>
+      <img src="./img/nerds-index-slide3 1.png">
+    </section>
+    </section>
+    <section class="features">
+      <ul class="features-list">
+        <li class="feature-item">
+          <a href="#"><img src="./img/illustration-1 1.png"></a>
+          <p class="features-text-main">Веб-сайты</p>
+          <p class="features-text">Мир никогда не будет прежним<br> после того как увидит ваш сайт!</p>
+          <a class="button features-button features-button-red" href="blank.html">Заказать</a>
+        </li>
+        <li class="feature-item">
+          <a href="#"><img src="./img/illustration-2 1.png"></a>
+          <p class="features-text-main">Приложения</p>
+          <p class="features-text">Покорите топ-10 приложений<br> в AppStore и Google Play</p>
+          <a class="button features-button features-button-green"  href="blank.html">Заказать</a>
+        </li>
+        <li class="feature-item">
+          <a href="#"><img src="./img/illustration-3 1.png"></a>
+          <p class="features-text-main">Презентации</p>
+          <p class="features-text">Вы даже не подозреваете,<br> насколько вы изумительны!</p>
+          <a class="button  features-button features-button-yellow " href="blank.html">Заказать</a>
+        </li>
+      </ul>
+    </section>
+    <br>
+    <hr class="hr-hotizontal">
+    <div class="index-columns">
+    <section class="services">
+      <ul class="services-list">
+        <li class="service-item">
+      <p class="service-title">Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</p>
+      <p class="service-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не
+        покладая рук, как роботы.</p>
+        </li>
+      </ul>
+      <ul class="services-list">
+        <li class="service-item">
+          <p class="service-text service-text-title">Выполняем заказы на разработку:</p>
+          <p class="service-text"><span class="dash">—</span> Веб-сайтов любой сложности</p>
+          <p class="service-text"><span class="dash">—</span> Мобильных приложений для iOS и Android</p>
+          <p class="service-text"><span class="dash">—</span> Слайдшоу и видео для корпоративных презентаци</p>
+      </li>
+      </ul>
+    </section>
+    <section class="statistics">
+      <figure>
+        <a gref="#">
+          <img src="./img/nerds-illustration 1.png">
+        </a>
+      </figure>
+      <ul class="statistics-list">
+        <li class="statistic-item">
+          <p class="statistic-title">с 2004 года Любим точность во всем:</p>
+          <p class="statistic-numbers">146<sup>%</sup></p>
+          <p class="statistic-text">Уровень<br> самоотдачи</p>
+        </li>
+      </ul>
+      <ul class="statistics-list">
+        <li class="statistic-item">
+          <p class="statistic-numbers">100<sup>%</sup></p>
+          <p class="statistic-text">Соблюдение<br> сроков</p>
+        </li>
+      </ul>
+      <ul class="statistics-list">
+        <li class="statistic-item">
+          <p class="statistic-numbers">50<sup>%</sup></p>
+          <p class="statistic-text">Минимальная<br> предоплата</p>
+        </li>
+      </ul>
+    </section>
+    </div>
+    <br>
+    <hr class="hr-hotizontal">
+    <section class="logos">
+      <ul class="logos-list">
+        <li class="logo-item">
+          <a class="logo" href="#">
+            <img src="./img/logo-htmlacademy.png">
+          </a>
+          <hr class="hr-vertical">
+        </li>
+        <li class="logo-item">
+          <a class="logo" href="#">
+            <img src="./img/logo-barbershop.png">
+          </a>
+          <hr class="hr-vertical">
+        </li>
+        <li class="logo-item">
+          <a class="logo" href="#">
+            <img src="./img/logo-pink.png">
+          </a>
+          <hr class="hr-vertical">
+        </li>
+        <li class="logo-item">
+          <a class="logo" href="#">
+            <img src="./img/logo-mishka.png">
+          </a>
+          <hr class="hr-vertical">
+        </li>
+      </ul>
+      <hr class="hr-hotizontal">
+    </section>
+  </main>
+  <foooter class="main-footer">
+    <section class="contacts">
+      <ul class="contacts-list">
+        <li class="contact-item">
+      <p class="contact-title">NЁRDS DESIGN STUDIO</p>
+      <p class="contact-text">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург<br><br>
+        <a class="contact-text" href="tel:+7 800 555-86-28">+7 800 555-86-28</a></p>
+      <a class="button footer-button" href="blank.html">Напишите нам</a>
+      </li>
+      </ul>
+      <a href="#">
         <img src="./img/map-marker 1.png">
       </a>
-</section>
-<section>
-  <ul>
-<li>
-  <a href="https://vk.com/htmlacademy">
-    <img src="./img/vk-icon.png">
-  </a>
-</li>
-<li> <a href="https://www.facebook.com/htmlacademy/">
-    <img src="./img/fb-icon.png">
-  </a>
-</li> 
-<li> <a href="https://www.instagram.com/htmlacademy/">
-    <img src="./img/insta-icon.png" >
-  </a>
-</li> 
-</ul>
-<h2>Давайте дружить, это выгодно!</h2>
-<p>Скидка 10% для друзей из социальных сетей.</p>
-</section>
-</foooter>
+    </section>
+    <section class="footer">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a class=" icon footer-icon" href="https://vk.com/htmlacademy">
+           <svg width="27" height="15">
+            <use xlink:href="#vk"></use>
+           </svg>
+          </a>
+        </li>
+        <li class="footer-item">
+           <a class=" icon footer-icon" href="https://www.facebook.com/htmlacademy/">
+           <svg width="12" height="22">
+            <use xlink:href="#facebook"></use>
+           </svg>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a class=" icon footer-icon" href="https://www.instagram.com/htmlacademy/">
+           <svg width="21" height="21">
+            <use xlink:href="#instagram"></use>
+           </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <p class="footer-title">Давайте дружить, это выгодно!</p>
+          <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+        </li>
+      </ul>
+    </section>
+  </foooter>
+
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <svg width="21" height="21">
+      <use xlink:href="#close"></use>
+    </svg>
+    <p>Ваше имя:<br>
+      <input type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>Ваш email:<br>
+      <input type="text" name="email" placeholder="Email@example.com">
+    </p>
+    <p>Текст письма:<br>
+      <input type="text" name="message" placeholder="В свободной форме">
+    </p>
+    <a class="button modal-button">Отправить</a>
+  </section>
 </body>
 </html>

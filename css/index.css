@@ -1,0 +1,194 @@
+.feature-item {
+  text-align: center;
+}
+.features-text-main {
+  font-family: Roboto-700;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.features-text {
+  font-family: Roboto-400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.features-button {
+  font-family: Roboto-500;
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  border-radius: 3px;
+  padding: 16px 40px;
+}
+.features-button-red {
+  background-color: #FB565A;
+}
+.features-button-red:hover {
+  background-color: #E74246;
+}
+.features-button-red:active {
+  background-color: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.features-button-green {
+  background-color: #00CA74;
+}
+.features-button-green:hover {
+  background-color: #00BC6C;
+}
+.features-button-green:active {
+  background-color: #00AA62;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.features-button-yellow {
+  background-color: #EFC849;
+}
+.features-button-yellow:hover {
+  background-color: #EAB534;
+}
+.features-button-yellow:active {
+  background-color: #E5A722;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.service-title {
+  font-family: Roboto-500;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.service-text {
+  font-family: Roboto-400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  font-weight: 400;
+}
+.service-text-title {
+  font-family: Roboto-700;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.dash {
+  color: #FB565A;
+}
+.statistic-title {
+  font-family: Roboto-700;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.statistic-numbers {
+  font-family: Roboto-700;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+  color: #000000;
+}
+.statistic-text {
+  font-family: Roboto-400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: 18px;
+}
+.hr-hotizontal {
+  background-color: #EEEEEE;
+  border: #EEEEEE;
+  width: 1158px;
+  height: 2px;
+}
+.hr-vertical {
+  background-color: #EEEEEE;
+  border: #EEEEEE;
+  width: 2px;
+  height: 52px;
+}
+
+.logo {
+  opacity: 20%;
+}
+.logo:hover {
+  opacity: 100%;
+}
+.logo:active {
+  opacity: 10%;
+}
+
+.contact-title {
+  font-family: Roboto-700;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  padding-top: 49px;
+}
+.contact-text {
+  font-family: Roboto-400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+.contacts-list {
+  background-color: #FFFFFF;
+  width: 319px;
+  height: 308px;
+}
+.footer-button {
+  font-family: Roboto-500;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  background-color: #FB565A;
+  border-radius: 3px;
+  padding: 16px 45px;
+  width: 219px;
+  height: 50px;
+}
+.contacts {
+  background-image: url("../img/map\ 1.png");
+}
+.icon {
+  display: inline-block;
+  height: 81px;
+  width: 81px;
+  text-align: center;
+  background: #E1E1E1;
+  padding-top: 33px;
+  border-radius: 50%;
+  color: #fff;
+}
+.icon:hover{
+  background-color: #E74246;
+}
+.icon:active {
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.footer-title {
+  font-family: Roboto-700;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+.footer-text {
+  font-family: Roboto-400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}

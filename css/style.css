@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Roboto-400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-500;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: Roboto-700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-size: 16px;
+  color: #000000;
+  line-height: 30px;
+  background-color: #EEEEEE;
+  font-family: "Roboto-500";
+}
+.main-header-logo:hover {
+  opacity: 70%;
+}
+.main-header-logo:active {
+  opacity: 30%;
+}
+
+.navigation-item:hover {
+  color: #FB565A;
+}
+.navigation-item:active {
+  opacity: 30%;
+}
+
+.contact-title {
+  font-family: Roboto-700;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  padding-top: 49px;
+}
+
+.contact-text {
+  font-family: Roboto-400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts-list {
+  background-color: #FFFFFF;
+  width: 319px;
+  height: 308px;
+}
+
+.footer-button {
+  font-family: Roboto-500;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  background-color: #FB565A;
+  border-radius: 3px;
+  padding: 16px 45px;
+  width: 219px;
+  height: 50px;
+}
+
+.contacts {
+  background-image: url("../img/map\ 1.png");
+}
+
+.icon {
+  display: inline-block;
+  height: 81px;
+  width: 81px;
+  text-align: center;
+  background: #E1E1E1;
+  padding-top: 33px;
+  border-radius: 50%;
+  color: #fff;
+}
+.icon:hover {
+  background-color: #E74246;
+}
+
+.icon:active {
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.footer-title {
+  font-family: Roboto-700;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer-text {
+  font-family: Roboto-400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
