@@ -46,6 +46,7 @@ a {
 }
 .main-header-logo:hover {
   opacity: 70%;
+  transition: all 0.3s;
 }
 .main-header-logo:active {
   opacity: 30%;
@@ -53,21 +54,23 @@ a {
 
 .navigation-item:hover {
   color: #FB565A;
+  transition: all 0.3s;
 }
 .navigation-item:active {
   opacity: 30%;
+  color: #000000;
 }
 
-.contact-title {
+.map-title {
   font-family: Roboto-700;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   color: #000000;
-  padding-top: 49px;
+  text-transform: uppercase;
 }
 
-.contact-text {
+.map-text {
   font-family: Roboto-400;
   font-weight: 400;
   font-size: 16px;
@@ -81,7 +84,7 @@ a {
   height: 308px;
 }
 
-.footer-button {
+.map-button {
   font-family: Roboto-500;
   font-weight: 500;
   font-size: 16px;
@@ -92,13 +95,23 @@ a {
   padding: 16px 45px;
   width: 219px;
   height: 50px;
+  border: 0px ;
+}
+.map-button:hover {
+  background-color: #E74246;
+}
+.map-button:active {
+  background-color: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.contacts {
+.map {
   background-image: url("../img/map\ 1.png");
+  height: 416px;
 }
 
-.icon {
+
+.link {
   display: inline-block;
   height: 81px;
   width: 81px;
@@ -108,16 +121,17 @@ a {
   border-radius: 50%;
   color: #fff;
 }
-.icon:hover {
+.link:hover {
   background-color: #E74246;
+  transition: all 0.7s;
 }
 
-.icon:active {
+.link:active {
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.footer-title {
+.social-main-text {
   font-family: Roboto-700;
   font-weight: 700;
   font-size: 36px;
@@ -125,7 +139,7 @@ a {
   color: #000000;
 }
 
-.footer-text {
+.social-text {
   font-family: Roboto-400;
   font-weight: 400;
   font-size: 16px;

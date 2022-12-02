@@ -82,6 +82,7 @@ input[name="r"] {
   padding: 16px 45px;
   width: 240px;
   height: 50px;
+  border: 0px;
 }
 .slider-button:hover {
   background-color: #E74246;

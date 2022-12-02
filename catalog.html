@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,8 @@
   <link rel="stylesheet" href="./css/catalog.css">
   <title>Каталог</title>
 </head>
+
 <body>
-<header class="main-header">
   <div class="visually-hidden">
     <svg>
       <symbol id="trash" viewBox="0 0 15 15 " fill="none">
@@ -33,263 +34,250 @@
         <path fill="currentColor" d="M5.5 10 0 0h11" />
       </symbol>
       <symbol id="up" viewBox="0 0 11 10" fill="none">
-        <path fill="currentColor" d="M5.5 0 0 10h11L5.5 0Z" opacity=".2" />
+        <path fill="currentColor" d="M5.5 0 0 10h11L5.5 0Z"/>
       </symbol>
       <symbol id="close" viewBox="0 0 21 21" fill="none">
-        <path fill="currentColor" fill-opacity=".3"
+        <path fill="currentColor"
           d="m13.34 10.509 7.376-7.377c.39-.39.39-1.026 0-1.416L19.301.3a1.003 1.003 0 0 0-1.415 0l-7.377 7.378L3.132.301a1.003 1.003 0 0 0-1.416 0L.301 1.716c-.39.39-.39 1.026 0 1.416l7.377 7.377-7.377 7.377c-.39.39-.39 1.026 0 1.415l1.416 1.415c.39.39 1.026.39 1.416 0l7.377-7.377 7.377 7.377c.39.39 1.026.39 1.415 0l1.415-1.415c.39-.39.39-1.026 0-1.415l-7.378-7.377Z" />
       </symbol>
     </svg>
   </div>
-  <nav class="main-navigation">
-    <ul>
-      <li>
-        <a href="index.html" class="main-header-logo">
-      <img src="./img/nerds-logo.png" alt="Логотип Нёрдс">
-       </a>
-      </li>
-    </ul>
 
-    <ul class="site-navigation">
-      <li><a href="#">Студия</a></li>
-      <li><a href="#">Клиенты</a></li>
-      <li><a href="#">Магазин</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-    <ul>
-      <li>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="index.html" class="main-header-logo">
+        <img src="./img/nerds-logo.png" alt="Логотип Нёрдс">
+      </a>
+
+      <ul class="site-navigation">
+        <li class="navigation-item">
+          <a href="#">Студия</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#">Клиенты</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#">Магазин</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <a class="login-link" href="#">
         <svg width="15" height="15">
           <use xlink:href="#trash"></use>
         </svg>
-      </li>
-      <li>
-        <a class="login-link" href="blank.html">Вход</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main class="contaner catalog-main">
-  <h1 class="main-title"> Магазин готовых шаблонов</h1>
-    <section class="price">
-      <h2>Цены</h2>
-        <ul class="price-list">
-            <li class="price-item"><p class="section-title">Стоимость:</p></li>
-            <li><p>от 0</p></li>
-            <li><p>до 150 000</p></li>
-        </ul>
+        Корзина
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="main-title">Магазин готовых шаблонов</h1>
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form>
+        <label for="price" class="filter-legend">Стоимость:</label>
+        <input id="price" class="range" type="range" min="0" max="150000" value="50" step="10">
+
+        <fieldset class="grid">
+          <legend class="filter-legend">Сетка:</legend>
+          <ul>
+            <li class="filter-radiobuttons">
+              <input type="radio" name="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-radiobuttons">
+              <input type="radio" name="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-radiobuttons">
+              <input type="radio" name="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="peculiarities">
+          <legend class="filter-legend">Оссобености:</legend>
+          <ul>
+            <li class="filter-checkboxes">
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li class="filter-checkboxes">
+              <input type="checkbox" name="advantages" id="filter-adventages">
+              <label for="filter-adventages">Блок преимуществ</label>
+            </li>
+            <li class="filter-checkboxes">
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li class="filter-checkboxes">
+              <input type="checkbox" name="galery" id="filter-galery">
+              <label for="filter-galery">Галерея</label>
+            </li>
+            <li class="filter-checkboxes">
+              <input type="checkbox" name="filter-bascket" id="filter-bascket">
+              <label for="filter-bascket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="button filter-button" type="submit">Показать</button>
+      </form>
     </section>
-    <section class="grids">
-      <h2>Сетка</h2>
-        <ul class="grids-list">
-            <li class="grid-item">
-              <p class="section-title">Сетка:</p>
-            </li>
-            <li class="grid-item ">
-              <input class="radio" id="adapt" type="radio" name="adaptation" checked>
-            <label>Адаптивная</label>
-          </li>
-            <li class=" grid-item">
-              <input class="radio" id="fix" type="radio" name="fix">
-              <label>Фиксированная</label>
-            </li>
-            <li class="grid-item">
-              <input class="radio " id="rub" type="radio" name="rubber">
-              <label>Резиновая</label>
-            </li>
-        </ul>
-    </section>
-    <section class="peculiarities">
-      <h2>Оссобенности</h2>
-        <ul class="peculiarities-list">
-          <li class="peculiarities-item">
-            <p class="section-title">Оссобенности:</p>
-          </li>
-            <li class="peculiarities-item">
-              <input class="chekbox" type="checkbox" id="slaider" name="slaider" checked>
-            Слайдер
-            </li>
-            <li class="peculiarities-item">
-              <input class="chekbox" type="checkbox" id="block" name="block">
-            Блок преимуществ
-          </li>
-            <li class="peculiarities-item">
-              <input class="chekbox" type="checkbox" id="news" name="news" checked>
-            Новости
-            </li>
-            <li class="peculiarities-item">
-              <input class="chekbox" type="checkbox" id="galery" name="galery">
-            Галерея
-          </li>
-            <li class="peculiarities-item">
-              <input class="chekbox" type="checkbox" id="basket" name="basket">
-            Корзинa
-            </li>
-            <li class="peculiarities-item">
-              <a href="blank.html" class="peculiarities-button">Показать</a>
-            </li>
-        </ul>
-    </section>
+
     <section class="sorting">
-      <h2>Сортировка</h2>
-      <ul class="sorting-list">
-        <li class="sorting-item">
-          <p class="section-title">Сортировать:</p>
+      <h2 class="text-sorting">Сортировка:</h2>
+      <ul>
+        <li>
+          <a class="sorting-link " href="#">По цене</a>
         </li>
-        <li class="sorting-item">
-          <p class="sorting-text">По цене:</p>
+        <li>
+          <a class="sorting-link" href="#">По типу</a>
         </li>
-        <li class="sorting-item">
-          <p class="sorting-text">По типу:</p>
+        <li>
+          <a class="sorting-link" href="#">По названию</a>
         </li>
-        <li class="sorting-item">
-          <p class="sorting-text">По названию:</p>
+        <li>
+          <a class="sorting-link" href="#">
+            <svg width="11" height="10">
+              <use xlink:href="#down"></use>
+            </svg>
+          </a>
         </li>
-        <li class="sorting-item">
-          <svg width="11" height="10">
-            <use xlink:href="#down"></use>
-          </svg>
-        </li>
-        <li class="sorting-item">
-          <svg width="11" height="10">
-            <use xlink:href="#up"></use>
-          </svg>
+        <li>
+          <a class="sorting-link" href="#">
+            <svg width="11" height="10">
+              <use xlink:href="#up"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </section>
-    <aside class="projects">
-        <ul class="projects-item">
-            <li class="project-list">
-                <a href="./img/img-sedona.png">
-                  <img class="project-img" src="./img/img-sedona.png" alt="">
-                </a>
-              </li>
-              <li class="project-list project-list-item">
-                <h4 class="project-title">Sedona</h4>
-                <p class="project-text">Информационный сайт<br> для туристов</p>
-                <a class="project-button" href="#">9 900 ₽</a>
-              </li>
 
-            <li class="project-list">
-                <a href="./img/img-pink.png">
-                  <img class="project-img" src="./img/img-pink.png" alt="">
-                </a>
-              </li>
-              <li class="project-list project-list-item">
-                <h4 class="project-title">Pink App</h4>
-                <p class="project-text">Продуктовый лендинг<br> приложения для iOS и Android</p>
-                <a class="project-button" href="#">9 900 ₽</a>
-              </li>
+    <section class="templates">
+      <h2 class="visually-hidden">Шаблоны</h2>
+      <ul>
+        <li>
+          <img class="templates-image" src="./img/img-sedona.png" alt="Сайт для туристов Sedona" width="358"
+            height="578">
+          <div class="templates-characteristic">
+            <p class="templates-header">Sedona</p>
+            <p class="templates-text">Информационный сайт<br> для туристов</p>
+            <button class="templates-button" type="button">9 900 ₽</button>
+          </div>
+        </li>
 
-            <li class="project-list">
-                <a href="./img/img-barbershop.png">
-                  <img class="project-img" src="./img/img-barbershop.png" alt="">
-                </a>
-              </li>
-              <li class="project-list project-list-item">
-                <h4 class="project-title">Barbershop</h4>
-                <p class="project-text">Сайт салона красоты.<br> Для мужчин, да.</p>
-                <a class="project-button" href="#">9 900 ₽</a>
-              </li>
+        <li>
+          <img class="templates-image" src="./img/img-pink.png" alt="Лендинг приложения Pink" width="358" height="578">
+          <div class="templates-characteristic">
+            <p class="templates-header">Pink App</p>
+            <p class="templates-text">Продуктовый лендинг<br> приложения для iOS и Android</p>
+            <button class="templates-button" type="button">9 900 ₽</button>
+          </div>
+        </li>
 
-            <li class="project-list">
-              <a href="./img/img-mishka.png">
-                <img class="project-img" src="./img/img-mishka.png" alt="">
-              </a>
-            </li>
-              <li class="project-list project-list-item">
-                <h4 class="project-title">Mishka</h4>
-                <p class="project-text">Интернет-магазин<br>  вязаных игрушек</p>
-                <a class="project-button" href="#">9 900 ₽</a>
-              </li>
+        <li>
+          <img class="templates-image" src="./img/img-barbershop.png" alt="Барбершоп Borodinski" width="358"
+            height="578">
+          <div class="templates-characteristic">
+            <p class="templates-header">Barbershop</p>
+            <p class="templates-text">Сайт салона красоты.<br> Для мужчин, да.</p>
+            <button class="templates-button" type="button">9 900 ₽</button>
+          </div>
+        </li>
 
-            <li class="project-list">
-              <a href="./img/img-aplus.png">
-                <img class="project-img" src="./img/img-aplus.png" alt="">
-              </a>
-            </li>
-              <li class="project-list project-list-item">
-                <h4 class="project-title">A Plus</h4>
-                <p class="project-text">Лендинг курсов повышения<br> квалификации</p>
-                <a class="project-button" href="#">9 900 ₽</a>
-              </li>
+        <li>
+          <img class="templates-image" src="./img/img-mishka.png" alt="Магазин вязаных игрушек Mishka" width="358"
+            height="578">
+          <div class="templates-characteristic">
+            <p class="templates-header">Mishka</p>
+            <p class="templates-text">Интернет-магазин<br> вязаных игрушек</p>
+            <button class="templates-button" type="button">9 900 ₽</button>
+          </div>
+        </li>
 
-            <li class="project-list">
-              <a href="./img/img-kvast.png">
-                <img class="project-img" src="./img/img-kvast.png" alt="">
-              </a>
-            </li>
-              <li class="project-list project-list-item">
-                <h4 class="project-title">Кваст</h4>
-                <p class="project-text">Промо-сайт производителя<br> крафтового кваса</p>
-                <a class="project-button" href="#">9 900 ₽</a>
-              </li>
+        <li>
+          <img class="templates-image" src="./img/img-aplus.png" alt="Лендинг курсов A Plus" width="358" height="578">
+          <div class="templates-characteristic">
+            <p class="templates-header">A Plus</p>
+            <p class="templates-text">Лендинг курсов повышения<br> квалификации</p>
+            <button class="templates-button" type="button">9 900 ₽</button>
+          </div>
+        </li>
+
+        <li>
+          <img class="templates-image" src="./img/img-kvast.png" alt="Крафтовый квас Кваст" width="358" height="578">
+          <div class="templates-characteristic">
+            <p class="templates-header">Кваст</p>
+            <p class="templates-text">Промо-сайт производителя<br> крафтового кваса</p>
+            <button class="templates-button" type="button">9 900 ₽</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="guide-buttons">
+      <h2 class="visually-hidden">Направляющие кнопки</h2>
+      <ul>
+        <li>
+          <button class="guide-button" type="button">1</button>
+        </li>
+        <li>
+          <button class="guide-button" type="button">2</button>
+        </li>
+        <li>
+          <button class="guide-button" type="button">3</button>
+        </li>
+      </ul>
+      <button class="guide-button guide-button-next" type="button">Следующая </button>
+    </section>
+
+    <footer class="main-footer">
+      <section class="map">
+        <h2 class="map-title">Nёrds design studio</h2>
+        <p class="map-text">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <a class="map-text" href="tel:+7800555-86-28">+7 800 555-86-28</a>
+        <button type="button" class="button map-button">Напишите нам</button>
+      </section>
+
+      <section class="socials">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+
+        <ul class="socials-list">
+          <li class="social-item">
+            <a class="link" href="https://vk.com/htmlacademy">
+              <svg class="icon" width="27" height="15">
+                <use xlink:href="#vk"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="link" href="https://www.facebook.com/htmlacademy/">
+              <svg width="12" height="22">
+                <use xlink:href="#facebook"></use>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="link" href="https://www.instagram.com/htmlacademy/">
+              <svg width="21" height="21">
+                <use xlink:href="#instagram"></use>
+              </svg>
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
         </ul>
-        <ul class="projects-button">
-            <li>
-                <a class="button project-number-button" href="#">1</a>
-            </li>
-            <li>
-                <a class="button project-number-button" href="#">2</a>
-            </li>
-            <li>
-                <a class="button project-number-button" href="#">3</a>
-            </li>
-            <li>
-                <a class="button project-next-button" href="#">
-                    Следующая
-                </a>
-            </li>
-        </ul>
-    </aside>
-</main>
-<footer class="main-footer">
-  <section class="contacts">
-    <h2>Контакты</h2>
-    <ul class="contacts-list">
-      <li class="contact-item">
-        <p class="contact-title">NЁRDS DESIGN STUDIO</p>
-        <p class="contact-text">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург<br><br>
-          <a class="contact-text" href="tel:+7800555-86-28">+7 800 555-86-28</a>
-        </p>
-        <a class="button footer-button" href="blank.html">Напишите нам</a>
-      </li>
-    </ul>
-    <a href="#">
-      <img src="./img/map-marker.png" alt="">
-    </a>
-  </section>
-  <section class="footer">
-    <h2>Подвал</h2>
-    <ul class="footer-list">
-      <li class="footer-item">
-        <a class=" icon footer-icon" href="https://vk.com/htmlacademy">
-          <svg width="27" height="15">
-            <use xlink:href="#vk"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer-item">
-        <a class=" icon footer-icon" href="https://www.facebook.com/htmlacademy/">
-          <svg width="12" height="22">
-            <use xlink:href="#facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer-item">
-        <a class=" icon footer-icon" href="https://www.instagram.com/htmlacademy/">
-          <svg width="21" height="21">
-            <use xlink:href="#instagram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <ul class="footer-list">
-      <li class="footer-item">
-        <p class="footer-title">Давайте дружить, это выгодно!</p>
-        <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
-      </li>
-    </ul>
-  </section>
-</footer>
+        <p class="social-main-text">Давайте дружить, это выгодно!</p>
+        <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
+  </main>
 </body>
+
 </html>
