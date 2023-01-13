@@ -34,9 +34,15 @@
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
+.main-header {
+  padding-top: 49px;
+}
+
 .main-navigation {
   font-size: 16px;
   color: #000000;
@@ -44,6 +50,7 @@ a {
   background-color: #EEEEEE;
   font-family: "Roboto-500";
 }
+
 .main-header-logo:hover {
   opacity: 70%;
   transition: all 0.3s;
@@ -52,14 +59,35 @@ a {
   opacity: 30%;
 }
 
+.navigation-item {
+  margin-top: 10px;
+}
 .navigation-item:hover {
   color: #FB565A;
-  transition: all 0.3s;
 }
 .navigation-item:active {
   opacity: 30%;
   color: #000000;
 }
+
+.trash {
+  margin-right: 20px;
+
+}
+
+.login-link {
+  margin-top: 25px;
+  margin-right: -100px;
+  text-transform: uppercase;
+}
+.login-link:hover {
+  color: #FB565A;
+}
+.login-link:active {
+  opacity: 30%;
+  color: #000000;
+}
+
 
 .map-title {
   font-family: Roboto-700;
@@ -76,12 +104,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
-}
-
-.contacts-list {
-  background-color: #FFFFFF;
-  width: 319px;
-  height: 308px;
+  margin-top: 23px;
 }
 
 .map-button {
@@ -92,10 +115,12 @@ a {
   color: white;
   background-color: #FB565A;
   border-radius: 3px;
-  padding: 16px 45px;
+  padding: 15px 44px;
   width: 219px;
   height: 50px;
   border: 0px ;
+  margin-top: 32px;
+  text-transform: uppercase;
 }
 .map-button:hover {
   background-color: #E74246;
@@ -103,6 +128,7 @@ a {
 .map-button:active {
   background-color: #D7373B;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: hsl(0, 100%, 70%);
 }
 
 .map {
@@ -110,6 +136,13 @@ a {
   height: 416px;
 }
 
+.contacts {
+  width: 319px;
+  height: 308px;
+  margin-left: 140px;
+  padding-left: 25px;
+  padding-top: 49px;
+}
 
 .link {
   display: inline-block;
@@ -123,12 +156,12 @@ a {
 }
 .link:hover {
   background-color: #E74246;
-  transition: all 0.7s;
 }
 
 .link:active {
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: hsl(0, 100%, 70%);
 }
 
 .social-main-text {
@@ -145,4 +178,38 @@ a {
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+}
+
+.main-header {
+  width: 1160px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: 360px 685px 90px;
+}
+
+.site-navigation {
+  display: grid;
+  grid-template-columns: 109px 109px 109px 109px;
+  text-transform: uppercase;
+}
+
+.socials-list {
+  display: grid;
+  grid-template-columns: 90px 90px 90px ;
+}
+
+.map {
+  margin-bottom: 68px;
+}
+
+.socials {
+  display: grid;
+  margin-left: 140px;
+  margin-right: 240px;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 68px;
 }
