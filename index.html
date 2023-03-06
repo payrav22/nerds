@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/slider.css">
+  <link rel="stylesheet" href="./css/modal.css">
   <title>Нёрдс</title>
 </head>
 
@@ -38,7 +39,7 @@
         <path fill="currentColor" d="M5.5 0 0 10h11L5.5 0Z" opacity=".2" />
       </symbol>
       <symbol id="close" viewBox="0 0 21 21" fill="none">
-        <path fill="currentColor" fill-opacity=".3"
+        <path fill="currentColor"
           d="m13.34 10.509 7.376-7.377c.39-.39.39-1.026 0-1.416L19.301.3a1.003 1.003 0 0 0-1.415 0l-7.377 7.378L3.132.301a1.003 1.003 0 0 0-1.416 0L.301 1.716c-.39.39-.39 1.026 0 1.416l7.377 7.377-7.377 7.377c-.39.39-.39 1.026 0 1.415l1.416 1.415c.39.39 1.026.39 1.416 0l7.377-7.377 7.377 7.377c.39.39 1.026.39 1.415 0l1.415-1.415c.39-.39.39-1.026 0-1.415l-7.378-7.377Z" />
       </symbol>
     </svg>
@@ -52,16 +53,16 @@
 
       <ul class="site-navigation">
         <li class="navigation-item">
-          <a href="#">Студия</a>
+          <a class="navigation-link navigation-link-studio" href="#">Студия</a>
         </li>
         <li class="navigation-item">
-          <a href="#">Клиенты</a>
+          <a class="navigation-link navigation-link-clients" href="#">Клиенты</a>
         </li>
         <li class="navigation-item">
-          <a href="catalog.html">Магазин</a>
+          <a class="navigation-link navigation-link-shop" href="catalog.html">Магазин</a>
         </li>
         <li class="navigation-item">
-          <a href="#">Контакты</a>
+          <a class="navigation-link navigation-link-contacts" href="#">Контакты</a>
         </li>
       </ul>
 
@@ -93,9 +94,9 @@
         </div>
 
         <div class="slide second-slide">
-          <b class="slider-title">Любим математику<br> как никто другой</b>
+          <b class="slider-title">Любим математику<br> как ни кто другой</b>
           <p class="slider-text">Никакого креатива, только математические формулы<br> для расчета идеальных
-            пропорций</p>
+            пропорций.</p>
           <button type="button" class="button slider-button">Узнать больше</button>
         </div>
 
@@ -111,6 +112,7 @@
           <label for="radiobutton-2" class="navigation-button"></label>
           <label for="radiobutton-3" class="navigation-button"></label>
         </div>
+      </div>
     </section>
 
     <section class="services">
@@ -154,9 +156,9 @@
 
       <section class="statistics">
 
-        <h2 class="visually-hidden">Статистика</h2>
+        <h2 class="visually-hidden">Статистика &#8381</h2>
 
-    
+
         <p class="statistic-main-text">C 2004 года любим точность во всем:</p>
 
         <dl class="statistics-list">
@@ -171,7 +173,7 @@
           <div>
             <dt class="statistic-text">Минимальная предоплата</dt>
             <dd class="statistic-numbers">50<sup>%</sup></dd>
-
+          </div>
         </dl>
       </section>
     </div>
@@ -207,11 +209,11 @@
   <footer class="main-footer">
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <section class="contacts">
+        <section class="contacts">
         <h2 class="map-title">Nёrds design studio</h2>
-        <p class="map-text">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <a class="map-text" href="tel:+7800555-86-28">+7 800 555-86-28</a>
-        <button type="button" class="button map-button">Напишите нам</button>
+        <p class="map-text">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+        <a class="map-text" href="tel:+78005558628">+7 800 555-86-28</a><br>
+        <button type="button" class="map-button button-open">Напишите нам</button>
       </section>
     </section>
 
@@ -245,42 +247,48 @@
         </li>
       </ul>
       <ul>
-        <li><b class="social-main-text">Давайте дружить, это выгодно!</b></li>
-        <li><b class="social-text">Скидка 10% для друзей из социальных сетей.</b></li>
+        <li>
+          <b class="social-main-text">Давайте дружить, это выгодно!</b>
+        </li><br>
+        <li>
+          <b class="social-text">Скидка 10% для друзей из социальных сетей.</b>
+        </li>
       </ul>
     </section>
   </footer>
 
-  <section class="modal">
-    <h2 class="modal-title">Напишите нам</h2>
 
+  <section class="modal modal--show">
+    <h2 class="modal-title">Напишите нам</h2>
 
     <form class="modal-form" method="get">
       <p>
         <label class="modal-label" for="name">Ваше имя:</label><br>
-        <input class="modal-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
+        <input class="modal-input" id="name" type="text" name="name" placeholder="Имя Фамилия" required>
       </p>
       <p>
         <label class="modal-label" for="email">Ваш email:</label><br>
-        <input class="modal-input" id="email" type="text" name="email" placeholder="email@example.com">
+        <input class="modal-input" id="email" type="text" name="email" placeholder="email@example.com" required>
       </p>
       <p>
         <label class="modal-label" for="message">Текст письма:</label><br>
-        <textarea class="modal-textarea" name="text" id="message" cols="30" rows="10"
-          placeholder="B свободной форме"></textarea>
+        <textarea class="modal-textarea" name="text" id="message" cols="30" rows="10" placeholder="B свободной форме"
+          required></textarea>
       </p>
 
       <button class="button modal-button" type="submit">Отправить</button>
     </form>
 
-    <button class="modal-close-button" type="button">
+    <button class="modal-close-button button-close" type="button">
       <svg width="21" height="21">
         <use xlink:href="#close"></use>
       </svg>
       <span class="visually-hidden">Close</span>
     </button>
-
   </section>
+
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

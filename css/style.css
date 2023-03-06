@@ -2,10 +2,12 @@
   font-family: Roboto-400;
   src: url(../fonts/Roboto-Regular.ttf);
 }
+
 @font-face {
   font-family: Roboto-500;
   src: url(../fonts/Roboto-Medium.ttf);
 }
+
 @font-face {
   font-family: Roboto-700;
   src: url(../fonts/Roboto-Bold.ttf);
@@ -19,6 +21,7 @@
   color: inherit;
   line-height: inherit;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -31,6 +34,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 ul {
   list-style: none;
 }
@@ -39,8 +43,8 @@ a {
   text-decoration: none;
 }
 
-.main-header {
-  padding-top: 49px;
+button {
+  cursor: pointer;
 }
 
 .main-navigation {
@@ -54,7 +58,9 @@ a {
 .main-header-logo:hover {
   opacity: 70%;
   transition: all 0.3s;
+  cursor: pointer;
 }
+
 .main-header-logo:active {
   opacity: 30%;
 }
@@ -62,17 +68,45 @@ a {
 .navigation-item {
   margin-top: 10px;
 }
-.navigation-item:hover {
+
+.navigation-link:hover {
   color: #FB565A;
 }
-.navigation-item:active {
-  opacity: 30%;
+
+.navigation-link:active {
   color: #000000;
+  opacity: 0.3;
+}
+
+.navigation-link-studio:focus {
+  background-image: url("../img/podcherivanie.png.png");
+  background-repeat: no-repeat;
+  background-position: 1px 17px;
+}
+
+.navigation-link-clients:focus {
+  background-image: url("../img/podcherivanie.png.png");
+  background-repeat: no-repeat;
+  background-position: 1px 17px;
+  background-size: 76px 2px;
+}
+
+.navigation-link-shop:focus {
+  background-image: url("../img/podcherivanie.png.png");
+  background-repeat: no-repeat;
+  background-position: 1px 17px;
+  background-size: 83px 2px;
+}
+
+.navigation-link-contacts:focus {
+  background-image: url("../img/podcherivanie.png.png");
+  background-repeat: no-repeat;
+  background-position: 1px 17px;
+  background-size: 83px 2px;
 }
 
 .trash {
   margin-right: 20px;
-
 }
 
 .login-link {
@@ -80,14 +114,30 @@ a {
   margin-right: -100px;
   text-transform: uppercase;
 }
+
 .login-link:hover {
   color: #FB565A;
 }
+
 .login-link:active {
   opacity: 30%;
   color: #000000;
 }
 
+.login-link:focus {
+  background-image: url("../img/podcherivanie.png.png");
+  background-repeat: no-repeat;
+  background-position: 1px 22px;
+  background-size: 112px 2px;
+}
+
+.map {
+  margin-bottom: 68px;
+  background-image: url(../img/map\ 1.png);
+  background-size: 1440px 416px;
+  width: 1440px;
+  height: 416px;
+}
 
 .map-title {
   font-family: Roboto-700;
@@ -118,31 +168,31 @@ a {
   padding: 15px 44px;
   width: 219px;
   height: 50px;
-  border: 0px ;
+  border: 0px;
   margin-top: 32px;
   text-transform: uppercase;
 }
+
 .map-button:hover {
   background-color: #E74246;
 }
+
 .map-button:active {
   background-color: #D7373B;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: hsl(0, 100%, 70%);
 }
 
-.map {
-  background-image: url("../img/map\ 1.png");
-  height: 416px;
+.contacts {
+  height: 340px;
+  margin-left: 140px;
+  padding-left: 50px;
+  padding-top: 80px;
+  background-image: url(../img/contacts-background.png);
+  background-repeat: no-repeat;
+  background-position: 1px 54px;
 }
 
-.contacts {
-  width: 319px;
-  height: 308px;
-  margin-left: 140px;
-  padding-left: 25px;
-  padding-top: 49px;
-}
 
 .link {
   display: inline-block;
@@ -154,6 +204,7 @@ a {
   border-radius: 50%;
   color: #fff;
 }
+
 .link:hover {
   background-color: #E74246;
 }
@@ -180,15 +231,12 @@ a {
   color: #444444;
 }
 
-.main-header {
-  width: 1160px;
-  margin-left: 140px;
-  margin-right: 140px;
-}
-
 .main-navigation {
   display: grid;
   grid-template-columns: 360px 685px 90px;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 49px;
 }
 
 .site-navigation {
@@ -197,19 +245,15 @@ a {
   text-transform: uppercase;
 }
 
-.socials-list {
-  display: grid;
-  grid-template-columns: 90px 90px 90px ;
-}
-
-.map {
-  margin-bottom: 68px;
-}
-
 .socials {
   display: grid;
   margin-left: 140px;
   margin-right: 240px;
   grid-template-columns: 1fr 2fr;
   margin-bottom: 68px;
+}
+
+.socials-list {
+  display: grid;
+  grid-template-columns: 90px 90px 90px;
 }

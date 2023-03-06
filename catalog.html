@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/catalog.css">
+  <link rel="stylesheet" href="./css/modal.css">
   <title>Каталог</title>
 </head>
 
@@ -51,21 +52,21 @@
 
       <ul class="site-navigation">
         <li class="navigation-item">
-          <a href="#">Студия</a>
+          <a class="navigation-link navigation-link-studio" href="#">Студия</a>
         </li>
         <li class="navigation-item">
-          <a href="#">Клиенты</a>
+          <a class="navigation-link navigation-link-clients" href="#">Клиенты</a>
         </li>
         <li class="navigation-item">
-          <a href="#">Магазин</a>
+          <a class="navigation-link navigation-link-shop" href="#">Магазин</a>
         </li>
         <li class="navigation-item">
-          <a href="#">Контакты</a>
+          <a class="navigation-link navigation-link-contacts" href="#">Контакты</a>
         </li>
       </ul>
 
       <a class="login-link" href="#">
-        <svg width="15" height="15">
+        <svg class="trash" width="15" height="15">
           <use xlink:href="#trash"></use>
         </svg>
         Корзина
@@ -76,29 +77,30 @@
   <main>
     <h1 class="main-title">Магазин готовых шаблонов</h1>
 
-    <div class="shop">
+    <div class="shop container">
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form>
-          <label for="price" class="filter-legend">Стоимость:</label><br><br>
-          <input id="price" class="range" type="range" min="0" max="150000" value="50" step="10">
+          <label for="price" class="filter-legend filter-legend-price">Стоимость:</label><br><br>
+          <input id="price" class="filter-range" type="range" min="0" max="150000" value="50" step="10">
 
           <fieldset class="grid">
             <legend class="filter-legend">Сетка:</legend>
             <ul>
               <li class="filter-radiobuttons">
-                <input class="visually-hidden filter-radiobutton" type="radio" name="adaptive" id="filter-adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
+                <input class="visually-hidden filter-radiobutton" type="radio" name="adaptive" id="filter-adaptive"
+                  checked>
+                <label class="label-radiobutton" for="filter-adaptive">Адаптивная</label>
               </li>
 
               <li class="filter-radiobuttons">
-                <input class="visually-hidden filter-radiobutton" type="radio" name="fixed" id="filter-fixed">
-                <label for="filter-fixed">Фиксированная</label>
+                <input class="visually-hidden filter-radiobutton" type="range" name="fixed" id="filter-fixed">
+                <label class="label-radiobutton" for="filter-fixed">Фиксированная</label>
               </li>
 
               <li class="filter-radiobuttons">
                 <input class="visually-hidden filter-radiobutton" type="radio" name="rubber" id="filter-rubber">
-                <label for="filter-rubber">Резиновая</label>
+                <label class="label-radiobutton" for="filter-rubber">Резиновая</label>
               </li>
 
             </ul>
@@ -128,7 +130,8 @@
               </li>
 
               <li class="filter-checkboxes">
-                <input class="visually-hidden filter-checkbox" type="checkbox" name="filter-bascket" id="filter-bascket">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="filter-bascket"
+                  id="filter-bascket">
                 <label for="filter-bascket">Корзина</label>
               </li>
 
@@ -176,6 +179,7 @@
           <h2 class="visually-hidden">Шаблоны</h2>
           <ul class="templates-list">
             <li class="templates-item">
+              <img class="templates-browser" src="./img/browser.png" alt="Браузер" width="358" height="40">
               <img class="templates-image" src="./img/img-sedona.png" alt="Сайт для туристов Sedona" width="358"
                 height="578">
               <div class="templates-characteristic">
@@ -186,6 +190,7 @@
             </li>
 
             <li class="templates-item">
+              <img class="templates-browser" src="./img/browser.png" alt="Браузер" width="358" height="40">
               <img class="templates-image" src="./img/img-pink.png" alt="Лендинг приложения Pink" width="358"
                 height="578">
               <div class="templates-characteristic">
@@ -196,6 +201,7 @@
             </li>
 
             <li class="templates-item">
+              <img class="templates-browser" src="./img/browser.png" alt="Браузер" width="358" height="40">
               <img class="templates-image" src="./img/img-barbershop.png" alt="Барбершоп Borodinski" width="358"
                 height="578">
               <div class="templates-characteristic">
@@ -206,6 +212,7 @@
             </li>
 
             <li class="templates-item">
+              <img class="templates-browser" src="./img/browser.png" alt="Браузер" width="358" height="40">
               <img class="templates-image" src="./img/img-mishka.png" alt="Магазин вязаных игрушек Mishka" width="358"
                 height="578">
               <div class="templates-characteristic">
@@ -215,7 +222,8 @@
               </div>
             </li>
 
-            <li>
+            <li class="templates-item">
+              <img class="templates-browser" src="./img/browser.png" alt="Браузер" width="358" height="40">
               <img class="templates-image" src="./img/img-aplus.png" alt="Лендинг курсов A Plus" width="358"
                 height="578">
               <div class="templates-characteristic">
@@ -226,6 +234,7 @@
             </li>
 
             <li class="templates-item">
+              <img class="templates-browser" src="./img/browser.png" alt="Браузер" width="358" height="40">
               <img class="templates-image" src="./img/img-kvast.png" alt="Крафтовый квас Кваст" width="358"
                 height="578">
               <div class="templates-characteristic">
@@ -253,7 +262,7 @@
             </li>
 
             <li class="guide-button-item">
-              <button class="guide-button guide-button-next" type="button">Следующая </button>
+              <button class=" guide-button-next" type="button">Следующая </button>
             </li>
           </ul>
 
@@ -267,9 +276,9 @@
       <h2 class="visually-hidden">Карта</h2>
       <section class="contacts">
         <h2 class="map-title">Nёrds design studio</h2>
-        <p class="map-text">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <a class="map-text" href="tel:+7800555-86-28">+7 800 555-86-28</a>
-        <button type="button" class="button map-button">Напишите нам</button>
+        <p class="map-text">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+        <a class="map-text" href="tel:+7800555-86-28">+7 800 555-86-28</a><br>
+        <button type="button" class=" map-button button-open">Напишите нам</button>
       </section>
     </section>
 
@@ -305,7 +314,7 @@
       <ul>
         <li>
           <b class="social-main-text">Давайте дружить, это выгодно!</b>
-        </li>
+        </li><br>
         <li>
           <b class="social-text">Скидка 10% для друзей из социальных сетей.</b>
         </li>
@@ -313,6 +322,42 @@
     </section>
   </footer>
 
+
+  <section class="modal modal--show">
+    <h2 class="modal-title">Напишите нам</h2>
+
+    <form class="modal-form" method="get">
+      <p>
+        <label class="modal-label" for="name">Ваше имя:</label><br>
+        <input class="modal-input" id="name" type="text" name="name" placeholder="Имя Фамилия" required>
+      </p>
+      <p>
+        <label class="modal-label" for="email">Ваш email:</label><br>
+        <input class="modal-input" id="email" type="text" name="email" placeholder="email@example.com" required>
+      </p>
+      <p>
+        <label class="modal-label" for="message">Текст письма:</label><br>
+        <textarea class="modal-textarea" name="text" id="message" cols="30" rows="10" placeholder="B свободной форме"
+          required></textarea>
+      </p>
+
+      <button class="button modal-button" type="submit">Отправить</button>
+    </form>
+
+    <button class="modal-close-button button-close" type="button">
+      <svg width="21" height="21">
+        <use xlink:href="#close"></use>
+      </svg>
+      <span class="visually-hidden">Close</span>
+    </button>
+  </section>
+
+
+
+
+
+<script src="./script.js"></script>
 </body>
 
 </html>
+

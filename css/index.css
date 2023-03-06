@@ -47,9 +47,11 @@
 .services-button-red {
   background-color: #FB565A;
 }
+
 .services-button-red:hover {
   background-color: #E74246;
 }
+
 .services-button-red:active {
   background-color: #D7373B;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -59,9 +61,11 @@
 .services-button-green {
   background-color: #00CA74;
 }
+
 .services-button-green:hover {
   background-color: #00BC6C;
 }
+
 .services-button-green:active {
   background-color: #00AA62;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -71,9 +75,11 @@
 .services-button-yellow {
   background-color: #EFC849;
 }
+
 .services-button-yellow:hover {
   background-color: #EAB534;
 }
+
 .services-button-yellow:active {
   background-color: #E5A722;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -109,8 +115,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-left: -40px;
+  padding-left: 40px;
   color: #283136;
   margin-bottom: 20px;
+  background-image: url("../img/podcherivanie.png.png");
+  background-repeat: no-repeat;
+  background-size: 25px 2px;
+  background-position:  1px;
 }
 
 .statistics {
@@ -151,94 +163,14 @@
 .logo {
   opacity: 20%;
 }
+
 .logo:hover {
   opacity: 100%;
-  transition: all 0.7s;
+  transition: all 0.2s;
 }
+
 .logo:active {
   opacity: 10%;
-}
-
-.modal-title {
-  font-family: Roboto-700;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 52.73px;
-  color: #000000;
-}
-
-.modal-label {
-  font-family: Roboto-700;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000;
-}
-
-.modal-input {
-  font-size: Roboto-400;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-  border: 2px solid #D7DCDE;
-  width: 360px;
-  height: 50px;
-  margin-top: 10px;
-}
-.modal-input:hover {
-  border: 2px solid #B4B9BB;
-}
-.modal-input:focus {
-  border: 2px solid #000000;
-}
-
-.modal-textarea {
-  font-size: Roboto-400;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-  border: 2px solid #D7DCDE;
-  width: 760px;
-  height: 118px;
-  margin-top: 10px;
-}
-.modal-textarea:hover {
-  border: 2px solid #B4B9BB;
-}
-.modal-textarea:focus {
-  border: 2px solid #000000;
-}
-
-.modal-button {
-  font-family: Roboto-500;
-  width: 260px;
-  height: 50px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  color: white;
-  background-color: #FB565A;
-  border-radius: 3px;
-  padding: 17px 83px;
-  border: 0px;
-  margin-top: 47px;
-  text-transform: uppercase;
-}
-.modal-button:hover {
-  background-color: #E74246;
-}
-.modal-button:active {
-  background-color: #D7373B;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: hsl(0, 100%, 70%);;
-}
-
-.modal-close-button {
-  background-color: white;
-  color: red;
-  border: 0;
 }
 
 .services {
@@ -246,36 +178,24 @@
   margin-right: 200px;
 }
 
-.index-columns {
-  margin-left: 140px;
-  margin-right: 126px;
-  margin-top: 160px;
-}
-
-.clients {
-  width: 1159px;
-  margin-left: 140px;
-  margin-right: 141px;
-}
-
 .services-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .index-columns {
+  margin-left: 140px;
+  margin-right: 126px;
+  margin-bottom: 80px;
+  padding-top: 73px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin-bottom: 121px;
   gap: 149px;
-}
-
-.clients-list {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
+  background-image: url("../img/rectangle-9.png");
+  background-repeat: no-repeat;
+  background-size: 1158px 2px;
 }
 
 .statistics-list {
@@ -284,17 +204,25 @@
   gap: 22px;
 }
 
-.modal {
-  height: 590px;
-  width: 960px;
-  margin-left: 240px;
-  padding-top: 63px;
-  padding-left: 100px;
-  padding-right: 100px;
+.clients {
+  width: 1159px;
+  margin-left: 140px;
+  margin-right: 141px;
+  background-image: url("../img/rectangle-9.png");
+  background-repeat: no-repeat;
+  background-size: 1158px 2px;
 }
 
-.modal-form {
+.clients-list {
+  height: 184px;
+  padding-top: 46px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 80px;
+  background-image: url("../img/rectangle-9.png");
+  background-repeat: no-repeat;
+  background-size: 1158px 2px;
+  background-position: 1px 175px;
 }
+
+
