@@ -78,33 +78,6 @@ button {
   opacity: 0.3;
 }
 
-.navigation-link-studio:focus {
-  background-image: url("../img/podcherivanie.png.png");
-  background-repeat: no-repeat;
-  background-position: 1px 17px;
-}
-
-.navigation-link-clients:focus {
-  background-image: url("../img/podcherivanie.png.png");
-  background-repeat: no-repeat;
-  background-position: 1px 17px;
-  background-size: 76px 2px;
-}
-
-.navigation-link-shop:focus {
-  background-image: url("../img/podcherivanie.png.png");
-  background-repeat: no-repeat;
-  background-position: 1px 17px;
-  background-size: 83px 2px;
-}
-
-.navigation-link-contacts:focus {
-  background-image: url("../img/podcherivanie.png.png");
-  background-repeat: no-repeat;
-  background-position: 1px 17px;
-  background-size: 83px 2px;
-}
-
 .trash {
   margin-right: 20px;
 }

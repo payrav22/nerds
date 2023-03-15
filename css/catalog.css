@@ -20,6 +20,10 @@ input:hover {
   padding-left: 357px;
   padding-bottom: 108px;
   width: auto;
+  background-image: url("../img/podcherivanie.png.png");
+  background-repeat: no-repeat;
+  background-position: 755px 1px;
+  background-size: 83px 2px;
 }
 
 fieldset {
@@ -140,10 +144,6 @@ fieldset {
 .templates-browser {
   opacity: 25%;
 }
-.templates-item:hover .templates-browser {
-  opacity: 1;
-  transition: all 0.2s;
-}
 
 .templates-image {
   border-bottom-left-radius: 3px;
@@ -151,9 +151,20 @@ fieldset {
   margin-top: -4px;
 }
 
+.templates-item {
+  cursor: pointer;
+}
 .templates-item:hover {
   filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
   transition: all 0.5s;
+}
+.templates-item:hover .templates-characteristic {
+  opacity: 1;
+  transition: all 0.2s;
+}
+.templates-item:hover .templates-browser {
+  opacity: 1;
+  transition: all 0.2s;
 }
 
 .templates-header {
@@ -169,7 +180,6 @@ fieldset {
 .templates-header:hover {
   color: #FB565A;
   cursor: pointer;
-  transition: 0.2s;
 }
 
 .templates-header:active {
@@ -223,10 +233,7 @@ fieldset {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-.templates-item:hover .templates-characteristic {
-  opacity: 1;
-  transition: all 0.2s;
-}
+
 
 .guide-buttons {
   margin-left: -40px;
@@ -366,4 +373,3 @@ label {
   background-position: 8px 8px;
   opacity: 40%;
 }
-
