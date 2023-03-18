@@ -16,9 +16,10 @@
   margin: auto;
 }
 
-.modal--show {
+.modal-show {
   display: block;
 }
+
 
 .modal::after {
   content: "";
@@ -28,6 +29,7 @@
   height: 590px;
   width: 960px;
   z-index: 1;
+  display: block;
 }
 
 .modal-form {

@@ -47,6 +47,15 @@ button {
   cursor: pointer;
 }
 
+.Nerds {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.main-header {
+  width: 1440px;
+}
+
 .main-navigation {
   font-size: 16px;
   color: #000000;
@@ -204,6 +213,10 @@ button {
   color: #444444;
 }
 
+.social-text-item {
+  margin-bottom: 15px;
+}
+
 .main-navigation {
   display: grid;
   grid-template-columns: 360px 685px 90px;
@@ -230,3 +243,7 @@ button {
   display: grid;
   grid-template-columns: 90px 90px 90px;
 }
+
+
+
+

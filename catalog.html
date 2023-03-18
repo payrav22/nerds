@@ -22,6 +22,8 @@
 </head>
 
 <body>
+  <div class="Nerds">
+
   <div class="visually-hidden">
     <svg>
       <symbol id="trash" viewBox="0 0 15 15 " fill="none">
@@ -97,19 +99,19 @@
             <legend class="filter-legend">Сетка:</legend>
             <ul>
               <li class="filter-radiobuttons">
-                <input class="visually-hidden filter-radiobutton" type="radio" name="adaptive" id="filter-adaptive"
+                <input class="visually-hidden filter-radiobutton" type="radio" name="grid" id="adaptive"
                   checked>
-                <label class="label-radiobutton" for="filter-adaptive">Адаптивная</label>
+                <label class="label-radiobutton" for="adaptive">Адаптивная</label>
               </li>
 
               <li class="filter-radiobuttons">
-                <input class="visually-hidden filter-radiobutton" type="range" name="fixed" id="filter-fixed">
-                <label class="label-radiobutton" for="filter-fixed">Фиксированная</label>
+                <input class="visually-hidden filter-radiobutton" type="radio" name="grid" id="fixed">
+                <label class="label-radiobutton" for="fixed">Фиксированная</label>
               </li>
 
               <li class="filter-radiobuttons">
-                <input class="visually-hidden filter-radiobutton" type="radio" name="rubber" id="filter-rubber">
-                <label class="label-radiobutton" for="filter-rubber">Резиновая</label>
+                <input class="visually-hidden filter-radiobutton" type="radio" name="grid" id="rubber">
+                <label class="label-radiobutton" for="rubber">Резиновая</label>
               </li>
 
             </ul>
@@ -320,11 +322,13 @@
           </a>
         </li>
       </ul>
+
       <ul>
-        <li>
+        <li class="social-text-item">
           <b class="social-main-text">Давайте дружить, это выгодно!</b>
-        </li><br>
-        <li>
+        </li>
+
+        <li class="social-text-item">
           <b class="social-text">Скидка 10% для друзей из социальных сетей.</b>
         </li>
       </ul>
@@ -332,7 +336,7 @@
   </footer>
 
 
-  <section class="modal modal--show">
+  <section class="modal">
     <h2 class="modal-title">Напишите нам</h2>
 
     <form class="modal-form" method="get">
@@ -362,10 +366,9 @@
   </section>
 
 
-
-
-
 <script src="./script.js"></script>
+
+</div>
 </body>
 
 </html>
