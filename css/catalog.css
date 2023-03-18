@@ -328,10 +328,10 @@ label {
   margin-left: 36px;
 }
 
-.filter-checkbox+label::before {
+.filter-checkbox + label::before {
   content: "";
   position: absolute;
-  left: 155px;
+  margin-left: -34px;
   width: 23px;
   height: 23px;
   border: 3px solid #4D4D4D;
@@ -339,10 +339,10 @@ label {
   opacity: 40%;
 }
 
-.filter-checkbox:checked+label::after {
+.filter-checkbox-slider:checked + label::after {
   content: "";
   position: absolute;
-  left: 158px;
+  margin-left: -96px;
   width: 23px;
   height: 23px;
   background-image: url("../img/shape-chek-mark.svg");
@@ -351,10 +351,59 @@ label {
   opacity: 40%;
 }
 
-.filter-radiobutton+label::before {
+.filter-checkbox-adventages:checked+label::after {
   content: "";
   position: absolute;
-  left: 155px;
+  margin-left: -175px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/shape-chek-mark.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 2px;
+  opacity: 40%;
+}
+
+.filter-checkbox-news+label::after {
+  content: "";
+  position: absolute;
+  margin-left: -96px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/shape-chek-mark.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 2px;
+  opacity: 40%;
+}
+
+.filter-checkbox-galery+label::after {
+  content: "";
+  position: absolute;
+  margin-left: -91.6px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/shape-chek-mark.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 2px;
+  opacity: 40%;
+}
+
+.filter-checkbox-bascket:checked+label::after {
+  content: "";
+  position: absolute;
+  margin-left: -95px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/shape-chek-mark.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 2px;
+  opacity: 40%;
+}
+
+
+.filter-radiobutton + label::before {
+  content: "";
+  position: absolute;
+  margin-left: -35px;
   width: 25px;
   height: 25px;
   border: 5px solid #4D4D4D;
@@ -362,10 +411,34 @@ label {
   opacity: 40%;
 }
 
-.filter-radiobutton:checked+label::after {
+.filter-radiobutton-adaptive:checked + label::after {
   content: "";
   position: absolute;
-  left: 155px;
+  margin-left: -126px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/shape-oval.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+  opacity: 40%;
+}
+
+.filter-radiobutton-fixed+label::after {
+  content: "";
+  position: absolute;
+  margin-left: -154px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/shape-oval.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+  opacity: 40%;
+}
+
+.filter-radiobutton-rubber+label::after {
+  content: "";
+  position: absolute;
+  margin-left: -116px;
   width: 23px;
   height: 23px;
   background-image: url("../img/shape-oval.svg");
