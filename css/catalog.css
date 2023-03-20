@@ -160,11 +160,11 @@ fieldset {
 }
 .templates-item:hover .templates-characteristic {
   opacity: 1;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 .templates-item:hover .templates-browser {
   opacity: 1;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
 .templates-header {
