@@ -1,0 +1,414 @@
+
+ @font-face {
+  font-family: "Roboto Regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.main-header {
+  background-color: #EEEEEE;
+  padding-top: 40px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  font-family: "Roboto Medium";
+  font-size: 16px;
+  color: #000000;
+  line-height: 30px;
+}
+
+.main-header-logo:hover {
+  opacity: 70%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.main-header-logo:active {
+  opacity: 30%;
+}
+
+
+.site-navigation {
+  width: 437px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-left: -70px;
+}
+
+.navigation-item {
+  margin-right: 45px;
+  padding-top: 19px;
+}
+.navigation-item:hover {
+  color: #FB565A;
+}
+.navigation-item:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.login-link {
+  padding-top: 35px;
+  text-transform: uppercase;
+}
+.login-link:hover {
+  color: #FB565A;
+}
+.login-link:active {
+  opacity: 30%;
+  color: #000000;
+}
+
+.trash {
+  margin-right: 20px;
+  opacity: 0.3;
+}
+
+
+.map {
+  margin-bottom: -415px;
+  background-image: url(../img/map\ 1.png);
+  background-size: 100%  416px;
+  height: 416px;
+}
+
+.contacts {
+  width: 319px;
+  margin: 0 auto;
+}
+
+.contact-block {
+  margin-left: -470px;
+  height: 340px;
+  padding-left: 50px;
+  padding-top: 80px;
+  background-image: url(../img/contacts-background.png);
+  background-repeat: no-repeat;
+  background-position: 1px 54px;
+}
+
+.contact-title {
+  font-family: "Roboto Bold";
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contact-text {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  margin-top: 23px;
+}
+
+.contact-button {
+  font-family: "Roboto Medium";
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  background-color: #FB565A;
+  border-radius: 3px;
+  padding: 15px 44px;
+  height: 50px;
+  border: 0px;
+  margin-top: 32px;
+  text-transform: uppercase;
+}
+
+.contact-button:hover {
+  background-color: #E74246;
+}
+
+.contact-button:active {
+  background-color: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: hsl(0, 100%, 70%);
+}
+
+.socials {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+  width: 310px;
+  margin-left: 90px;
+  margin-top: 143px;
+}
+
+.link {
+  display: block;
+  height: 81px;
+  width: 81px;
+  text-align: center;
+  background: #E1E1E1;
+  padding-top: 33px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.link:hover {
+  background-color: #E74246;
+}
+
+.link:active {
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: hsl(0, 100%, 70%);
+}
+
+.social-text-list {
+  margin-right: 390px;
+  margin-top: 143px;
+
+}
+.social-text-item {
+  margin-bottom: 15px;
+}
+
+.social-main-text {
+  font-family: "Roboto Bold";
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.social-text {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+
+.modal {
+  height: 590px;
+  width: 960px;
+  margin-left: 240px;
+  padding-top: 63px;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  background-color: #FFFFFF;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.modal-show {
+  display: block;
+}
+
+
+.modal::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 590px;
+  width: 960px;
+  z-index: 1;
+  display: block;
+}
+
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.modal-title {
+  font-family: "Roboto Bold";
+  font-size: 45px;
+  line-height: 52.73px;
+  margin-top: -7px;
+  color: #000000;
+}
+
+.modal-label {
+  font-family: "Roboto Bold";
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  margin-left: 3px;
+}
+
+.modal-input {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  border: 2px solid #D7DCDE;
+  width: 360px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.modal-input:hover {
+  border: 2px solid #B4B9BB;
+}
+
+.modal-input:focus {
+  border: 2px solid #000000;
+}
+
+.modal-textarea {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  border: 2px solid #D7DCDE;
+  width: 760px;
+  height: 118px;
+  margin-top: 10px;
+}
+
+.modal-textarea:hover {
+  border: 2px solid #B4B9BB;
+}
+
+.modal-textarea:focus {
+  border: 2px solid #000000;
+}
+
+.modal-button {
+  font-family: "Roboto Medium";
+  height: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  background-color: #FB565A;
+  border-radius: 3px;
+  padding: 17px 83px;
+  border: 0px;
+  margin-top: 47px;
+  text-transform: uppercase;
+}
+
+.modal-button:hover {
+  background-color: #E74246;
+}
+
+.modal-button:active {
+  background-color: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: hsl(0, 100%, 70%);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 81px;
+  right: 100px;
+  width: 21px;
+  height: 21px;
+  border: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #FB565A;
+  opacity: 30%;
+}
+
+.modal-close-button:hover {
+  opacity: 100%;
+}
+
+.modal-close-button:active {
+  opacity: 10%;
+}
+
+.modal-close-button::before,
+.modal-close-button::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: var(--basic-dark);
+}
+
+.modal-close-button::before {
+  transform: rotate(45deg);
+}
+
+.modal-close-button::after {
+  transform: rotate(45deg)
+}
+
+
+
+
+
+
+
+
